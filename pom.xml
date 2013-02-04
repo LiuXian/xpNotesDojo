@@ -20,6 +20,18 @@
           <target>1.6</target>
         </configuration>
       </plugin>
+      
+       <!-- mvn jetty:* plugin. See http://wiki.eclipse.org/Jetty/Feature/Jetty_Maven_Plugin -->
+      <plugin>
+        <groupId>org.mortbay.jetty</groupId>
+        <artifactId>jetty-maven-plugin</artifactId>
+        <!-- Uncomment to enable auto java class reload on java changes
+        <configuration>
+            <scanIntervalSeconds>1</scanIntervalSeconds>
+        </configuration>
+         -->
+      </plugin>
+      
     </plugins>
    
   </build>
