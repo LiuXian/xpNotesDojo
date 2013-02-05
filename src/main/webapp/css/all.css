@@ -7,6 +7,7 @@ body {
   background: white;
   color: #333;
   height: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #1facef), color-stop(1, #0d3296));
 }
 .MainView.appLayout {
   height: 100%;
@@ -23,6 +24,8 @@ body {
   border: 4px solid #5493CF;
   border-radius: 20px;
   -webkit-box-shadow: 0px 0px 10px #292929;
+  position: relative;
+  top: 90px;
 }
 .UserLogin .container .field {
   margin: 15px;
