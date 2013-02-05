@@ -1,0 +1,14 @@
+.liu .dijitButton {
+	width:200px;
+	height:40px;
+	line-height:40px; 
+	color:white;
+	border-radius:5px;
+	text-align:center;
+	-webkit-box-shadow: 2px 2px 4px #292929;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #2AAA18), color-stop(1, #7FFF7F));
+}
+
+.liu  .dijitButtonNode {
+	border:0px;
+}

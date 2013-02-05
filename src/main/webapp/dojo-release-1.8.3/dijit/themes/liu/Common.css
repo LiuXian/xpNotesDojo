@@ -1,0 +1,15 @@
+.liu .dojoDndItemOver {
+	background-image: url(images/treeHover.png);
+}
+
+/* DnD avatar-specific settings */
+/* For now it uses a default set of rules. Some other DnD classes can be modified as well. */
+.liu table.dojoDndAvatar { -moz-border-radius: 0; border: 1px solid #ccc; border-collapse: collapse; background-color: #fff; font-size: 75%; color: black;}
+.liu .dojoDndAvatar td	{ border: none; }
+.liu .dojoDndAvatar tr	{ border: none; }
+.liu .dojoDndAvatarHeader td	{ height: 20px; padding: 0 0 0 21px; }
+.liu .dojoDndAvatarItem td { padding: 2px;}
+.liu.dojoDndMove .dojoDndAvatarHeader	{background-color: #f58383; background-image: url(images/dndNoMove.png); background-repeat: no-repeat; background-position: 2px center;}
+.liu.dojoDndCopy .dojoDndAvatarHeader	{background-color: #f58383; background-image: url(images/dndNoCopy.png); background-repeat: no-repeat; background-position: 2px center;}
+.liu.dojoDndMove .dojoDndAvatarCanDrop .dojoDndAvatarHeader	{background-color: #97e68d; background-image: url(images/dndMove.png); background-repeat: no-repeat; background-position: 2px center;}
+.liu.dojoDndCopy .dojoDndAvatarCanDrop .dojoDndAvatarHeader	{background-color: #97e68d; background-image: url(images/dndCopy.png); background-repeat: no-repeat; background-position: 2px center;}

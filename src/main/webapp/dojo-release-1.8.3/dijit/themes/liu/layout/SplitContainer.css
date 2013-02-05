@@ -1,0 +1,29 @@
+.liu .dijitSplitContainerSizerH {
+	background:url("../images/splitContainerSizerV.png") repeat-y #fff;
+	border:0;
+	border-left:0 solid #d3d3d3;
+	border-right:0 solid #d3d3d3;
+	width:5px;
+}
+
+.liu .dijitSplitContainerSizerH .thumb {
+	background:url("../images/splitContainerSizerV-thumb.png") no-repeat;
+	left:1px;
+	width:2px;
+	height:19px;
+}
+
+.liu .dijitSplitContainerSizerV {
+	background:url("../images/splitContainerSizerH.png") repeat-x #fff;
+	border:0;
+	border-top:0 solid #d3d3d3;
+	border-bottom:0 solid #d3d3d3;
+	height:2px;
+}
+
+.liu .dijitSplitContainerSizerV .thumb {
+	background:url("../images/splitContainerSizerH-thumb.png") no-repeat;
+	top:1px;
+	width:19px;
+	height:5px;
+}

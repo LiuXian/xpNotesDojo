@@ -1,0 +1,46 @@
+.liu .dijitSelectError .dijitButtonContents,
+.liu .dijitSelectHover .dijitArrowButton,
+.liu .dijitSelectActive .dijitArrowButton,
+.liu .dijitSelectOpened .dijitArrowButton,
+.liu .dijitSelectDisabled .dijitArrowButton,
+.liu .dijitSelectReadOnly .dijitArrowButton {
+	background: transparent none;
+}
+
+.liu .dijitSelect .dijitArrowButton {
+	background: #bcd5f0 url("../images/buttonEnabled.png") repeat-x top left;
+	border-width: 0;
+}
+
+/* Mirror DropDownButton */
+.liu .dijitSelectDisabled,
+.liu .dijitSelectDisabled TD {
+    border-color: #dedede !important;
+    background:#fafafa url("../images/buttonDisabled.png") top repeat-x;
+}
+.dj_ie .liu .dijitSelectDisabled  TD * {
+	filter: gray() alpha(opacity=50);
+}
+
+.liu .dijitSelectHover,
+.liu .dijitSelectHover TD {
+    color:#000;
+    background:#fcfcfc url("../images/buttonHover.png") repeat-x top left;
+}
+
+.liu .dijitSelectActive,
+.liu .dijitSelectOpened,
+.liu .dijitSelectActive TD,
+.liu .dijitSelectOpened TD {
+    border-color:#dedede !important;
+    background: #f5f5f5 url("../images/buttonActive.png") top left repeat-x;
+}
+
+/* Make the menu look more combobox-like */
+.liu .dijitSelectMenu td {
+	padding: 0;
+}
+.liu .dijitSelectMenu .dijitMenuItemLabel,
+.liu .dijitSelectMenu .dijitMenuArrowCell {
+	padding: 0.1em 0.2em;
+}

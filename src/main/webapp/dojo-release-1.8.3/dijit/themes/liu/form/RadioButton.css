@@ -1,0 +1,46 @@
+.liu .dijitToggleButton .dijitRadio,
+.liu .dijitToggleButton .dijitRadioIcon {
+	background-image: url('../images/spriteRadio.gif');
+}
+
+.liu .dijitRadio,
+.liu .dijitRadioIcon	{		/* inside a toggle button */
+	background-image: url('../images/spriteRadio.gif'); /* checkbox sprite image */
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+.liu .dijitRadio,
+.liu .dijitToggleButton .dijitRadioIcon {
+	/* unselected */
+	background-position: -16px;
+}
+
+.liu .dijitRadioChecked,
+.liu .dijitToggleButtonChecked .dijitRadioIcon {
+	/* selected */
+	background-position: 0;
+}
+
+.liu .dijitRadioDisabled {
+	/* unselected and disabled */
+	background-position: -48px;
+}
+
+.liu .dijitRadioCheckedDisabled {
+	/* selected but disabled */
+	background-position: -32px;
+}
+
+.liu .dijitRadioHover {
+	/* hovering over an unselected enabled radio button */
+	background-position: -80px;
+}
+
+.liu .dijitRadioCheckedHover {
+	/* hovering over a selected enabled radio button */
+	background-position: -64px;
+}

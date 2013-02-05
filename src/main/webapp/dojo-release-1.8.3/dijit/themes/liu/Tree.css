@@ -1,0 +1,100 @@
+/* Tree */
+
+.liu .dijitTreeNode {
+    background : url('images/treeI.gif') no-repeat;
+    background-position : top left;
+    background-repeat : repeat-y;
+    zoom: 1;
+}
+
+/* left vertical line (grid) for all nodes */
+.liu .dijitTreeIsLast {
+    background: url('images/treeI_half.gif') no-repeat;
+}
+
+.liu .dijitTreeRowHover {
+	/* using a transparent png so that we can still see grid lines, which are (unfortunately) behind the dijitRowNode that we are hovering over */
+	background-image: url(images/treeHover.png);
+	background-repeat: repeat;
+	background-color: transparent !important;
+}
+
+.liu .dijitTreeLabel {
+	font-weight: normal;
+	margin-left: 3px;
+}
+
+.liu .dijitTreeIsRoot {
+    margin-left: 0;
+    background-image: none;
+}
+
+.liu .dijitTreeExpando {
+    width: 18px;
+    height: 18px;
+}
+
+.liu .dijitTreeRow {
+	/* so insert line shows up on IE when dropping after a target element */
+	padding-bottom: 2px;
+}
+
+.liu .dijitTreeContent {
+    min-height: 18px;
+    min-width: 18px;
+    padding-left:1px;
+}
+
+.liu .dijitTreeExpandoOpened {
+	background: url('images/spriteTree.gif') no-repeat -18px top;
+}
+
+.liu .dijitTreeExpandoClosed {
+	background-image: url('images/spriteTree.gif');
+}
+
+.liu .dijitTreeExpandoLeaf {
+	background: url('images/spriteTree.gif') no-repeat -36px top;
+}
+
+.liu .dijitTreeExpandoLoading {
+	background-image: url('images/treeExpand_loading.gif');
+}
+
+.liu .dijitTreeIcon {
+	width: 16px;
+	height: 16px;
+}
+
+.liu .dijitFolderOpened {
+	background: url('images/spriteDivIcons.gif') no-repeat -16px top;
+}
+
+.liu .dijitFolderClosed {
+	background: url('images/spriteDivIcons.gif') no-repeat top left;
+}
+
+.liu .dijitLeaf {
+	background: url('images/spriteDivIcons.gif') no-repeat -32px top;
+}
+
+/* Drag and Drop on TreeNodes
+ * Put insert line on dijitTreeContent node so it's aligned w/
+ * (ie, indented equally with) target element, even
+ * though dijitTreeRowNode is the actual "drag object"
+ */
+.liu .dijitTreeNode .dojoDndItemBefore,
+.liu .dijitTreeNode .dojoDndItemAfter {
+	border-bottom: none;
+	border-top: none;
+}
+
+.liu .dijitTreeNode .dojoDndItemBefore .dijitTreeContent {
+	/* copied from Common.css */
+	border-top: 2px solid #369;
+}
+
+.liu .dijitTreeNode .dojoDndItemAfter .dijitTreeContent {
+	/* copied from Common.css */
+	border-bottom: 2px solid #369;
+}

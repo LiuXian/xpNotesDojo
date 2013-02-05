@@ -1,0 +1,46 @@
+.liu .dijitToggleButton .dijitCheckBox,
+.liu .dijitToggleButton .dijitCheckBoxIcon {
+	background-image: url('../images/spriteCheckbox.gif');
+}
+
+.liu .dijitCheckBox,
+.liu .dijitCheckBoxIcon {		/* inside a toggle button */
+	background-image: url('../images/spriteCheckbox.gif'); /* checkbox sprite image */
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+.liu .dijitCheckBox,
+.liu .dijitToggleButton .dijitCheckBoxIcon {
+	/* unchecked */
+	background-position: -16px;
+}
+
+.liu .dijitCheckBoxChecked,
+.liu .dijitToggleButtonChecked .dijitCheckBoxIcon {
+	/* checked */
+	background-position: 0;
+}
+
+.liu .dijitCheckBoxDisabled {
+	/* disabled */
+	background-position: -48px;
+}
+
+.liu .dijitCheckBoxCheckedDisabled {
+	/* disabled but checked */
+	background-position: -32px;
+}
+
+.liu .dijitCheckBoxHover {
+	/* hovering over an unchecked enabled checkbox */
+	background-position: -80px;
+}
+
+.liu .dijitCheckBoxCheckedHover {
+	/* hovering over a checked enabled checkbox */
+	background-position: -64px;
+}

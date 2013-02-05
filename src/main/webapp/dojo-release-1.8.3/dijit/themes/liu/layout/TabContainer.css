@@ -1,0 +1,403 @@
+@import url("../Menu.css");
+
+/* Classes for all types of tabs (top/bottom/left/right) */
+
+.liu .dijitTabContainer .tabStripRBtn {
+	margin-right: 21px;
+}
+.liu .dijitTabContainer .tabStripLBtn {
+	margin-left: 21px;
+}
+
+.liu .dijitTabContainerBottom .nowrapTabStrip .dijitTab {
+	top: 0;
+}
+
+/* Tabs, shared classes */
+.liu .dijitTabPaneWrapper {
+	background:#fff;
+	border:1px solid #ccc;
+	margin: 0;
+	padding: 0;
+}
+
+.liu .dijitTab {
+    padding:3px 6px 3px 4px;
+    background: url("../images/tabContainerSprite.gif") repeat-x 0 -350px;
+    position: relative;
+	line-height:normal;
+	margin: 0 1px;	/* space between one tab and the next in top/bottom mode */
+	color: #6d6d6d;
+    border: 1px #dedede solid;
+	border-bottom: 1px #ccc solid;
+}
+
+/* hovered tab */
+.liu .dijitTabHover {
+	color: #243C5F;
+	background: url("../images/tabContainerSprite.gif") repeat-x 0 -200px;
+}
+
+/* selected tab */
+.liu .dijitTabChecked {
+	background: url("../images/tabContainerSprite.gif") repeat-x 0 -50px;
+	color: #243C5F !important;
+}
+
+/* Nested Tabs */
+.liu .dijitTabContainerNested .dijitTabListWrapper {
+	height: auto;
+}
+
+.liu .dijitTabContainerTabListNested {
+	background: #FDFDFD;
+	border: none;
+	margin-bottom: 0;		/* override margin: -1px; */
+}
+.liu .dijitTabContainerTabListNested .dijitTab {
+	background: none;
+	border: none;
+	top: 0;	/* override top:1px setting of top-level tabs */
+}
+.liu .dijitTabContainerTabListNested .dijitTabHover .tabLabel {
+	text-decoration: underline;
+}
+.liu .dijitTabContainerTabListNested .dijitTabChecked .tabLabel {
+	text-decoration: underline;
+	font-weight: bold;
+}
+.liu .dijitTabContainerSpacerNested {
+	/* thinner line between tab (labels) and content */
+	height: 0;
+	border-bottom: 0;
+}
+.liu .dijitTabPaneWrapperNested {
+	border: none;	/* prevent double border */
+}
+
+
+/* Close button */
+.liu .dijitTabCloseButton {
+	background: url("../images/spriteRoundedIconsSmall.png") no-repeat -60px top;
+	width: 15px;
+	height: 15px;
+	margin-top: -1px;
+}
+
+.dj_ie6 .liu .dijitTabCloseButton {
+	background: url("../images/spriteRoundedIconsSmall.gif") no-repeat -60px top;
+}
+.liu .dijitTabCloseButtonHover {
+	background: url("../images/spriteRoundedIconsSmall.png") no-repeat -60px -15px;
+}
+.dj_ie6 .liu .dijitTabCloseButtonHover {
+	background: url("../images/spriteRoundedIconsSmall.gif") no-repeat -60px -15px;
+}
+
+/* ================================ */
+/* top tabs */
+.liu .dijitTabContainerTop-tabs {
+	border-bottom: none;
+	padding-bottom: 1px;
+	background-position: bottom;
+	padding-left: 3px;
+}
+.liu .dijitTabContainerTop-tabs .dijitTab {
+    border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+}
+
+.dj_ie6 .liu .dijitTabListContainer-top,
+.dj_ie7 .liu .dijitTabListContainer-top {
+	z-index: 3;
+}
+
+.dj_ie6 .liu .dijitTabContainerTop-tabs,
+.dj_ie7 .liu .dijitTabContainerTop-tabs {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 0;
+}
+
+.liu .dijitTabContainerTopNoStrip {
+	padding-top: 3px;
+}
+
+/* top container */
+.liu .dijitTabContainerTop-container {
+	border-top: none;
+}
+
+/* selected tab */
+.liu .dijitTabContainerTop-tabs .dijitTabChecked {
+	border-bottom-color: #f8f8f8;
+}
+
+/* strip */
+.liu .dijitTabContainer .dijitTabContainerTopStrip {
+	border-bottom: none;
+	padding-top: 1px;
+	margin-top: 1px;
+	background: #f2f2f2;
+	border-top: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	border-left: 1px solid #CCC;
+}
+
+
+/* ================================ */
+/* bottom tabs */
+.liu .dijitTabContainerBottom-tabs {
+	border-top: none;
+	background-position: top;
+	padding-left: 3px;
+}
+.liu .dijitTabContainerBottom-tabs .dijitTab {
+    border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    border-bottom: none;
+    border-top: 1px solid #ccc;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background: url("../images/tabBottomEnabledC.gif") repeat-x bottom left;
+}
+
+
+.liu .dijitTabContainerBottom-tabs .dijitTabHover {
+	color: #243C5F;
+	background: url("../images/tabBottomHoverC.gif") repeat-x bottom left;
+}
+
+.liu .dijitTabContainerBottom-tabs .dijitTabChecked {
+	/* the selected tab (with or without hover) */
+    border-top-color: #f8f8f8;
+	background: url("../images/tabBottomActiveC.gif") repeat-x bottom left;
+}
+
+
+.dj_ie6 .liu .dijitTabListContainer-bottom,
+.dj_ie7 .liu .dijitTabListContainer-bottom {
+	z-index: 3;
+}
+
+.dj_ie6 .liu .dijitTabContainerBottom-tabs,
+.dj_ie7 .liu .dijitTabContainerBottom-tabs {
+	border-top: 1px solid #ccc;
+	margin-top: -1px;
+}
+
+/* bottom container */
+.liu .dijitTabContainerBottom-container {
+	border-bottom: none;
+}
+
+/* strip */
+.liu .dijitTabContainer .dijitTabContainerBottomStrip {
+	border: 1px solid #ccc;
+	background: #f2f2f2;
+	border-top: none;
+	padding-bottom: 2px;
+}
+
+/* top/bottom strip */
+.liu .dijitTabContainerBottom-spacer,
+.liu .dijitTabContainerTop-spacer {
+	height: 2px;
+	border: 1px solid #ccc;
+}
+
+.liu  .dijitTabContainerTop-spacer {
+	margin-top: -1px;
+    background: #f3f3f3;
+}
+.liu .dijitTabContainerBottom-spacer {
+	margin-bottom: -1px;
+    background: #f8f8f8;
+}
+
+
+/* ================================ */
+/* right tabs */
+.liu .dijitTabContainerRight-tabs {
+	border-color: #ccc;
+	padding-top: 3px;
+}
+.liu .dijitTabContainerRight-tabs .dijitTab {
+    border-radius: 0 4px 4px 0;
+    -moz-border-radius: 0 4px 4px 0;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #dedede !important;
+}
+
+.liu .dijitTabContainerRight .dijitTabListWrapper {
+	padding-right: 3px;
+}
+.liu .dijitTabContainerRight-tabs .dijitTabChecked {
+	border-left: 1px solid #f8f8f8;
+}
+
+
+/* right container */
+.liu .dijitTabContainerRight-container {
+	border-right: none;
+}
+
+/* some odd ie bug when borders disappear when setting a bottom margin, this sort of helps */
+.dj_ie .liu .dijitTabContainerRight-tabs .dijitTab {
+	border-bottom: solid #fff 1px;
+}
+
+/* selected tab */
+.liu .dijitTabContainerRight-tabs .dijitTabChecked {
+	border-left-color: #f8f8f8;
+}
+
+/* some odd ie bug when borders disappear when setting a bottom margin, this sort of helps */
+.dj_ie .liu .dijitTabContainerRight-tabs .dijitTabChecked,
+.dj_ie .liu .dijitTabContainerRight-tabs .dijitTabCheckedHover {
+	border-bottom: solid #efefef 1px;
+}
+
+/* strip */
+.liu .dijitTabContainerRightStrip {
+	padding-right: 2px;
+	border: 1px solid #ccc;
+	border-left: none;
+	background: #f2f2f2;
+}
+
+/* ================================ */
+/* left tabs */
+.liu .dijitTabContainerLeft-tabs {
+	border-color: #ccc;
+	padding-top: 3px;
+}
+.liu .dijitTabContainerLeft-tabs .dijitTab {
+    border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #dedede;
+}
+
+/* selected tab */
+.liu .dijitTabContainerLeft-tabs .dijitTabChecked {
+	border-right: 1px solid #f8f8f8;
+}
+
+/* left container */
+.liu .dijitTabContainerLeft-container {
+	border-left: none;
+}
+
+
+.dj_ie .liu .dijitTabContainerLeft-tabs .dijitTabChecked,
+.dj_ie .liu .dijitTabContainerLeft-tabs .dijitTabCheckedHover {
+	border-bottom: solid #efefef 1px;
+}
+
+.dj_ie .liu .dijitTabContainerLeft-tabs .dijitTabInnerDiv {
+	border-bottom: solid #fff 1px;
+}
+
+/* strip */
+.liu .dijitTabContainerLeftStrip {
+	padding-left: 2px;
+	border: 1px solid #ccc;
+	border-right: none;
+}
+
+.liu .dijitTabContainerLeftStrip {
+	background: #f2f2f2;
+}
+
+/* ================================ */
+/* left/right tabs */
+.liu .dijitTabContainerLeft-tabs .dijitTab,
+.liu .dijitTabContainerRight-tabs .dijitTab {
+	margin: 1px 0;	/* space between one tab and the next in left/right mode */
+}
+
+/* left/right tabstrip */
+.liu .dijitTabContainerLeft-spacer,
+.liu .dijitTabContainerRight-spacer {
+	width: 2px;
+	border: 1px solid #ccc;
+	background: #f8f8f8;
+}
+
+.liu .dijitTabContainerRight-spacer {
+	border-right: none;
+}
+
+.liu .dijitTabContainerRight-tabs {
+	padding-top: 3px;
+	height: 100%;
+}
+.liu .dijitTabContainerLeft-tabs {
+	height: 100%;
+}
+
+.liu .dijitTabContainerLeft-spacer {
+	border-left: none;
+}
+
+/* ================================ */
+
+/* this resets the tabcontainer strip when within a contentpane */
+.liu .dijitTabContainerTop-dijitContentPane .dijitTabContainerTop-tabs {
+	border-left: 0 solid #ccc;
+	border-top: 0 solid #ccc;
+	border-right: 0 solid #ccc;
+	padding-top: 0;
+	padding-left: 0;
+}
+
+/* ================================ */
+
+/* Menu and slider control styles */
+.liu .dijitTabContainer .tabStripButton {
+	margin-right: 0;
+	padding: 5px 3px 6px 0px;
+}
+
+.dj_ie6 .liu .tabStripButton .dijitTabInnerDiv .dijitTabContent,
+.dj_ie7 .liu .tabStripButton .dijitTabInnerDiv .dijitTabContent,
+.dj_opera .liu .tabStripButton .dijitTabInnerDiv .dijitTabContent {
+	padding-bottom: 7px;
+}
+
+.dj_ie6 .liu .tabStrip-disabled .tabStripButton .dijitTabInnerDiv .dijitTabContent,
+.dj_ie7 .liu .tabStrip-disabled .tabStripButton .dijitTabInnerDiv .dijitTabContent,
+.dj_opera .liu .tabStrip-disabled .tabStripButton .dijitTabInnerDiv .dijitTabContent {
+	padding-top: 4px;
+}
+
+.liu .dijitTabStripIcon {
+	height: 14px;
+	width: 14px;
+	background: url(../images/spriteRoundedIconsSmall.png) no-repeat left top;
+}
+
+.dj_ie6 .liu .dijitTabStripIcon {
+	background-image: url(../images/spriteRoundedIconsSmall.gif);
+}
+
+.liu .dijitTabStripSlideRightIcon {
+	background-position: -30px top;
+}
+
+.liu .dijitTabStripMenuIcon {
+	background-position: -15px top;
+}
+
+.liu .dijitTabContainerTopNone {
+	padding-top: 0;
+}
+
+.liu .dijitTabContainer .tabStripButton-top {
+	margin-top: 1px;
+}
+
+.liu .dijitTabContainer .tabStripButton-bottom {
+	border-bottom: medium none;
+	border-top: 1px solid #CCCCCC;
+}

@@ -1,0 +1,9 @@
+/* Calendar */
+
+.dijitRtl .liu .dijitCalendarDecrease {
+	background-position: -30px top;
+}
+
+.dijitRtl .liu .dijitCalendarIncrease {
+	background-position: 0 top;
+}

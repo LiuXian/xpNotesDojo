@@ -1,0 +1,43 @@
+.dijitRtl .liu .dijitTab {
+	margin-right:0;
+	margin-left:2px;		/* space between one tab and the next in top/bottom mode */
+}
+
+/* tab strips */
+.dijitRtl .liu .dijitTabContainer .tabStripButton {
+	margin-left: 0;
+}
+
+.dijitRtl .liu .dijitTabContainerTopStrip,
+.dijitRtl .liu .dijitTabContainerBottomStrip,
+.dijitRtl .liu .dijitTabContainerTop-tabs,
+.dijitRtl .liu .dijitTabContainerBottom-tabs {
+	padding-left: 0;
+	padding-right: 3px;
+}
+
+.dijitRtl .liu .dijitTabInnerDiv {
+	padding-left: 3px;
+	padding-right: 4px;
+}
+
+.dijitRtl .liu .dijitTabPaneWrapper {
+	#zoom: 1;
+}
+
+.dj_ie-rtl .liu .dijitTabContainerLeft-tabs {
+	margin-left: 0 !important;
+}
+
+.dj_ie-rtl .liu .dijitTabContainerRight-tabs {
+	margin-right: 0 !important;
+}
+
+.dijitRtl .liu .dijitTabContainerLeft-tabs .dijitTab,
+.dijitRtl .liu .dijitTabContainerRight-tabs .dijitTab {
+	margin-left:0;
+}
+
+.dj_ie-rtl .liu .dijitTab .dijitTabInnerDiv{
+	width : 1%;
+}
